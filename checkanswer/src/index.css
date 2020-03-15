@@ -1,0 +1,37 @@
+#question{
+  grid-area: q;
+  margin: auto;
+  color: red;
+}
+#choices{
+  grid-area: c;
+  width: 75%;
+  margin: auto;
+}
+#correctAnswers{
+  grid-area: cA;
+}
+#incorrectAnswers{
+  grid-area: iA;
+}
+#game{
+  display: grid;
+  grid-template-areas:
+    'q q . . .'
+    '. . . . .'
+    'c c c cA cA'
+    'c c c . .'
+    'c c c iA iA'
+    'c c c . .';
+}
+
+.choice{
+     border-left-style: solid;
+     color: blue;
+}
+
+button{
+  width:75%;
+  height: 4em;
+  margin: auto;
+}
